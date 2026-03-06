@@ -1,0 +1,224 @@
+.providerPage {
+  padding-top: 120px;
+}
+
+/* ── HERO ── */
+.providerHero {
+  background: white;
+  padding: 0 60px 80px;
+}
+
+.heroGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.heroImage {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  aspect-ratio: 4/5;
+}
+
+.heroContent {
+  padding-top: 40px;
+}
+
+.backLink {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--plum);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+.backLink:hover {
+  color: var(--plum-dark);
+}
+
+.heroName {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 700;
+  color: var(--plum-dark);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.heroTitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--plum);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.credTag {
+  background: var(--off-white);
+  border: 1px solid var(--light-gray);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--plum);
+}
+
+.heroQuote {
+  background: var(--off-white);
+  border-left: 3px solid var(--sage);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 32px;
+  font-family: var(--font-fraunces), serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--plum-dark);
+  font-style: italic;
+}
+
+/* ── BIO ── */
+.bioSection {
+  background: var(--warm-white);
+  padding: 80px 60px;
+}
+
+.bioInner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.bioText {
+  margin-top: 32px;
+}
+
+.bioText p {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--mid-gray);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* ── HIGHLIGHTS ── */
+.highlightsSection {
+  background: white;
+  padding: 80px 60px;
+}
+
+.highlightsInner {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.highlightsHeader {
+  margin-bottom: 56px;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.highlightCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.highlightIcon {
+  width: 48px;
+  height: 48px;
+  background: var(--off-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.highlightTitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--plum-dark);
+}
+
+.highlightDesc {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--mid-gray);
+  font-weight: 300;
+}
+
+/* ── CTA ── */
+.ctaSection {
+  padding: 80px 60px;
+  text-align: center;
+  background: var(--warm-white);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .heroGrid {
+    grid-template-columns: 360px 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .providerPage { padding-top: 90px; }
+  .providerHero { padding: 0 24px 48px; }
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heroImage {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .heroContent { padding-top: 0; }
+  .bioSection { padding: 48px 24px; }
+  .highlightsSection { padding: 48px 24px; }
+  .highlightsGrid { grid-template-columns: 1fr; gap: 28px; }
+  .ctaSection { padding: 48px 24px; }
+  .ctaButtons { flex-direction: column; }
+  .ctaButtons :global(.btn-plum),
+  .ctaButtons :global(.btn-sage) { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .providerHero { padding: 0 20px 36px; }
+  .heroName { font-size: clamp(28px, 7vw, 40px); }
+  .bioSection { padding: 36px 20px; }
+  .highlightsSection { padding: 36px 20px; }
+  .ctaSection { padding: 36px 20px; }
+}

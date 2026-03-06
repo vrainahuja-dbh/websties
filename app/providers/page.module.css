@@ -1,0 +1,149 @@
+.providersPage {
+  padding-top: 120px;
+}
+
+.providersHero {
+  background: var(--plum-dark);
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.providersHeroContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.providersHero :global(.section-label) {
+  color: var(--sage-light);
+}
+
+.providersHero :global(.section-title) {
+  color: white;
+  margin: 0 auto;
+}
+
+.providersHero :global(.section-subtitle) {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 16px auto 0;
+}
+
+/* ── PROVIDER LIST ── */
+.providersList {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.providerCard {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 48px;
+  align-items: start;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+.providerCard:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.providerImageWrap {
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.providerInfo {
+  padding: 40px 40px 40px 0;
+}
+
+.providerName {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  color: var(--plum-dark);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.providerTitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--plum);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.providerSpecialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.specialtyTag {
+  background: var(--off-white);
+  border: 1px solid var(--light-gray);
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--plum);
+}
+
+.providerBio {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--mid-gray);
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.providerLink {
+  font-family: var(--font-epilogue), sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--plum);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: gap 0.2s;
+}
+.providerCard:hover .providerLink {
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .providerCard {
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .providersHero { padding: 60px 24px; }
+  .providersList { padding: 48px 24px; }
+  .providerCard {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .providerImageWrap {
+    max-height: 360px;
+  }
+  .providerInfo {
+    padding: 28px 24px;
+  }
+}

@@ -1,0 +1,67 @@
+.section { background: var(--off-white); padding: 100px 60px; }
+.header { text-align: center; margin-bottom: 64px; }
+.tag {
+  display: inline-block;
+  background: var(--light-gray); color: var(--plum);
+  padding: 5px 18px; border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(32px, 3.5vw, 48px); font-weight: 700;
+  color: var(--plum-dark); line-height: 1.12; letter-spacing: -0.02em;
+}
+.title em { font-style: italic; color: var(--plum); }
+.grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 32px; max-width: 1100px; margin: 0 auto;
+}
+.card {
+  background: white; border-radius: 12px; padding: 36px 32px;
+  border: 1px solid var(--light-gray);
+  display: flex; flex-direction: column; gap: 20px;
+}
+.stars {
+  color: #D4A843; font-size: 18px; letter-spacing: 2px;
+}
+.quote {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px; line-height: 1.75; color: var(--mid-gray);
+  font-weight: 300; font-style: italic; flex: 1;
+}
+.author {
+  display: flex; align-items: center; gap: 14px;
+  padding-top: 16px; border-top: 1px solid var(--light-gray);
+}
+.avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--plum-light); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-fraunces), serif; font-size: 16px; font-weight: 600;
+  flex-shrink: 0;
+}
+.name {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px; font-weight: 600; color: var(--plum-dark);
+}
+.detail {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 12px; color: var(--mid-gray); font-weight: 300; margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 24px; }
+  .header { margin-bottom: 40px; }
+  .title { font-size: clamp(26px, 5vw, 36px); }
+  .grid { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 48px 20px; }
+}

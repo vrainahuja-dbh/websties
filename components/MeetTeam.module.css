@@ -1,0 +1,117 @@
+.section {
+  background: var(--warm-white);
+  padding: 100px 60px;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--light-gray); color: var(--plum);
+  padding: 5px 18px; border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(32px, 3.5vw, 48px); font-weight: 700;
+  color: var(--plum-dark); line-height: 1.12; letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 16px; line-height: 1.75; font-weight: 300;
+  color: var(--mid-gray); max-width: 600px; margin: 16px auto 0;
+}
+
+.track {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 4px 8px;
+  scrollbar-width: none;
+}
+.track::-webkit-scrollbar { display: none; }
+
+.card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-4px); }
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  margin-bottom: 0;
+}
+
+.nameOverlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: var(--plum);
+  padding: 16px 20px;
+  text-align: center;
+}
+
+.overlayName {
+  font-family: var(--font-fraunces), serif;
+  font-size: 17px; font-weight: 600;
+  color: white; letter-spacing: -0.01em;
+}
+
+.overlayTitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 12px; font-weight: 300;
+  color: rgba(255,255,255,0.75);
+  margin-top: 4px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.dot {
+  width: 32px; height: 4px;
+  border-radius: 2px;
+  background: var(--light-gray);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+.dotActive {
+  background: var(--plum);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 24px; }
+  .header { margin-bottom: 36px; }
+  .title { font-size: clamp(26px, 5vw, 36px); }
+  .card { flex: 0 0 260px; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 48px 20px; }
+  .card { flex: 0 0 240px; }
+}

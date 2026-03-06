@@ -1,0 +1,70 @@
+.meetSpecialist {
+  background: white; padding: 100px 60px;
+}
+.meetInner {
+  display: grid; grid-template-columns: 440px 1fr;
+  gap: 72px; align-items: start;
+  max-width: 1200px; margin: 0 auto;
+}
+.meetPhoto {
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  aspect-ratio: 4/5;
+}
+.meetTag {
+  display: inline-block;
+  background: var(--light-gray); color: var(--plum);
+  padding: 5px 16px; border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  margin-bottom: 18px;
+}
+.meetTitle {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(32px, 3.5vw, 48px); font-weight: 700;
+  color: var(--plum-dark); line-height: 1.1; letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.meetTitle em { font-style: italic; color: var(--plum); }
+.meetCredentials {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;
+}
+.credTag {
+  background: white; border: 1px solid var(--light-gray);
+  padding: 5px 14px; border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 11px; font-weight: 600; color: var(--plum);
+}
+.meetBio {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px; line-height: 1.8; color: var(--mid-gray);
+  font-weight: 300; margin-bottom: 24px;
+}
+.meetQuote {
+  background: white; border-left: 3px solid var(--sage);
+  padding: 20px 24px; border-radius: 0 8px 8px 0;
+  margin-bottom: 24px;
+  font-family: var(--font-fraunces), serif;
+  font-size: 16px; line-height: 1.65; color: var(--plum-dark);
+  font-style: italic;
+}
+.meetExtra {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px; line-height: 1.75; color: var(--mid-gray);
+  font-weight: 300; margin-bottom: 28px;
+}
+
+@media (max-width: 1024px) {
+  .meetInner { grid-template-columns: 1fr; gap: 40px; }
+  .meetPhoto { max-width: 360px; margin: 0 auto; }
+}
+
+@media (max-width: 768px) {
+  .meetSpecialist { padding: 60px 24px; }
+  .meetInner { gap: 32px; }
+  .meetTitle { font-size: clamp(28px, 5vw, 36px); }
+}
+
+@media (max-width: 480px) {
+  .meetSpecialist { padding: 48px 20px; }
+}

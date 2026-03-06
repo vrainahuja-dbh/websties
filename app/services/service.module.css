@@ -1,0 +1,321 @@
+.servicePage {
+  padding-top: 120px;
+}
+
+/* ── HERO ── */
+.serviceHero {
+  background: var(--plum-dark);
+  padding: 80px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.serviceHero::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: rgba(74, 31, 110, 0.4);
+  pointer-events: none;
+}
+
+.heroInner {
+  max-width: 780px;
+  position: relative;
+}
+
+.backLink {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--sage-light); text-decoration: none;
+  display: inline-block; margin-bottom: 24px;
+  transition: color 0.2s;
+}
+.backLink:hover { color: white; }
+
+.heroIcon {
+  font-size: 48px; margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(36px, 4vw, 56px); font-weight: 700;
+  color: white; line-height: 1.1;
+  letter-spacing: -0.02em; margin-bottom: 16px;
+}
+
+.heroSubtitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 18px; line-height: 1.75; font-weight: 300;
+  color: rgba(255,255,255,0.7); max-width: 600px;
+}
+
+/* ── OVERVIEW ── */
+.overviewSection {
+  background: var(--warm-white);
+  padding: 80px 60px;
+}
+
+.overviewInner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.overviewText {
+  margin-top: 32px;
+}
+
+.overviewText p {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px; line-height: 1.85;
+  color: var(--mid-gray); font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* ── FEATURES ── */
+.featuresSection {
+  background: white;
+  padding: 80px 60px;
+}
+
+.featuresInner {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.featuresHeader {
+  margin-bottom: 56px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.featureCard {
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+.featureIcon {
+  width: 48px; height: 48px;
+  background: var(--off-white); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+}
+
+.featureTitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: var(--plum-dark);
+}
+
+.featureDesc {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px; line-height: 1.75;
+  color: var(--mid-gray); font-weight: 300;
+}
+
+/* ── CONDITIONS / SYMPTOMS ── */
+.conditionsSection {
+  background: var(--warm-white);
+  padding: 80px 60px;
+}
+
+.conditionsInner {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.conditionsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0; margin-top: 32px;
+  background: white; border-radius: 8px;
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+}
+
+.conditionItem {
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px 24px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px; font-weight: 400;
+  color: var(--charcoal);
+  border-bottom: 1px solid var(--light-gray);
+}
+.conditionItem:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.conditionBullet {
+  color: var(--sage); font-size: 10px; flex-shrink: 0;
+}
+
+.conditionsCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.conditionCard {
+  background: white;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.conditionCard:hover {
+  box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+.conditionCardTitle {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--plum-dark);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conditionCardBullet {
+  color: var(--sage);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.conditionCardDesc {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--mid-gray);
+  font-weight: 300;
+}
+
+/* ── FAQ ── */
+.faqSection {
+  background: white;
+  padding: 80px 60px;
+}
+
+.faqInner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.faqHeader {
+  margin-bottom: 48px;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--light-gray);
+}
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--plum-dark);
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+.faqQuestion:hover {
+  color: var(--plum);
+}
+
+.faqChevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--plum-light);
+  transition: transform 0.3s;
+}
+
+.faqChevronOpen {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faqAnswerOpen {
+  max-height: 300px;
+}
+
+.faqAnswerText {
+  padding: 0 0 24px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--mid-gray);
+  font-weight: 300;
+}
+
+/* ── CTA ── */
+.ctaSection {
+  padding: 80px 60px;
+  text-align: center;
+  background: white;
+}
+
+.ctaButtons {
+  display: flex; gap: 14px;
+  justify-content: center; flex-wrap: wrap;
+  margin-top: 44px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .servicePage { padding-top: 90px; }
+  .serviceHero { padding: 48px 24px; }
+  .heroTitle { font-size: clamp(28px, 7vw, 40px); }
+  .overviewSection { padding: 48px 24px; }
+  .featuresSection { padding: 48px 24px; }
+  .featuresGrid { grid-template-columns: 1fr; gap: 28px; }
+  .conditionsSection { padding: 48px 24px; }
+  .conditionsList { grid-template-columns: 1fr; }
+  .conditionItem:nth-last-child(-n+2) { border-bottom: 1px solid var(--light-gray); }
+  .conditionItem:last-child { border-bottom: none; }
+  .conditionsCards { grid-template-columns: 1fr; }
+  .faqSection { padding: 48px 24px; }
+  .ctaSection { padding: 48px 24px; }
+  .ctaButtons { flex-direction: column; }
+  .ctaButtons :global(.btn-plum),
+  .ctaButtons :global(.btn-sage) { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .serviceHero { padding: 36px 20px; }
+  .overviewSection { padding: 36px 20px; }
+  .featuresSection { padding: 36px 20px; }
+  .conditionsSection { padding: 36px 20px; }
+  .faqSection { padding: 36px 20px; }
+  .ctaSection { padding: 36px 20px; }
+}

@@ -1,0 +1,17 @@
+.ctaSection { padding: 100px 60px; text-align: center; background: white; }
+
+.ctaButtons {
+  display: flex; gap: 14px; justify-content: center;
+  flex-wrap: wrap; margin-top: 44px;
+}
+
+@media (max-width: 768px) {
+  .ctaSection { padding: 60px 24px; }
+  .ctaButtons { flex-direction: column; }
+  .ctaButtons :global(.btn-plum),
+  .ctaButtons :global(.btn-sage) { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .ctaSection { padding: 48px 20px; }
+}
