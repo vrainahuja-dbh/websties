@@ -8,13 +8,6 @@ export const metadata = {
     "Andrea Briles, PA-C is a certified physician assistant providing expert gynecologic care at Asbery & Associates in Southern Illinois.",
 };
 
-const credentials = [
-  "PA-C",
-  "Certified Physician Assistant & Surgical Assistant",
-  "University of Alabama at Birmingham, 1995",
-  "Women\u2019s Health & Family Practice",
-];
-
 const highlights = [
   {
     icon: "\u{1F3E5}",
@@ -68,41 +61,28 @@ export default function AndreaBrilesPage() {
             <p className={styles.heroTitle}>
               Physician Assistant
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Andrea Briles attended The University of Alabama at Birmingham,
+                graduating in 1995 as a Certified Physician&apos;s Assistant and
+                Surgical Assistant. She began her 17-year career in the hospital
+                setting as a Surgical Assistant, spending 3 years in
+                Cardio-Thoracic Surgeries before moving on to Vascular Surgery
+                for the next 4 years.
+              </p>
+              <p>
+                Andrea transitioned to the medical office setting as a
+                Physician&apos;s Assistant in 2005. She joined Asbery &amp;
+                Associates in September 2012 and offers our patients a family
+                practice background in conjunction with Women&apos;s Health.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            Expert Care, Personal Touch
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Andrea Briles attended The University of Alabama at Birmingham,
-              graduating in 1995 as a Certified Physician&apos;s Assistant and
-              Surgical Assistant. She began her 17-year career in the hospital
-              setting as a Surgical Assistant, spending 3 years in
-              Cardio-Thoracic Surgeries before moving on to Vascular Surgery
-              for the next 4 years.
-            </p>
-            <p>
-              Andrea transitioned to the medical office setting as a
-              Physician&apos;s Assistant in 2005. She joined Asbery &amp;
-              Associates in September 2012 and offers our patients a family
-              practice background in conjunction with Women&apos;s Health.
-            </p>
           </div>
         </div>
       </section>

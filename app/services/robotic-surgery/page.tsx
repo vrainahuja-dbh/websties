@@ -5,7 +5,7 @@ import FAQ from "../FAQ";
 export const metadata = {
   title: "Robotic & Minimally Invasive Surgery — Asbery & Associates",
   description:
-    "Advanced robotic and laparoscopic gynecologic surgery in Southern Illinois. Faster recovery, less pain, and better outcomes — all locally.",
+    "Advanced robotic and laparoscopic gynecologic surgery in Southern Illinois. Faster recovery, less pain, and better outcomes. All available locally.",
 };
 
 const features = [
@@ -47,7 +47,7 @@ export default function RoboticSurgeryPage() {
     <main className={styles.servicePage}>
       <section className={styles.serviceHero}>
         <div className={styles.heroInner}>
-          <Link href="/#services" className={styles.backLink}>
+          <Link href="/services" className={styles.backLink}>
             &larr; All Services
           </Link>
           <div className={styles.heroIcon}>{"\u{1F916}"}</div>
@@ -56,7 +56,7 @@ export default function RoboticSurgeryPage() {
           </h1>
           <p className={styles.heroSubtitle}>
             Advanced laparoscopic and robotic procedures for faster recovery,
-            less pain, and better outcomes &mdash; all locally in Southern Illinois.
+            less pain, and better outcomes. All available locally in Southern Illinois.
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function RoboticSurgeryPage() {
         { q: "What is robotic surgery?", a: "Robotic surgery uses a state-of-the-art surgical system controlled by your surgeon to perform procedures through tiny incisions. The robotic arms provide enhanced precision, a magnified 3D view, and greater range of motion than the human hand alone." },
         { q: "How long is recovery after robotic surgery?", a: "Most patients return to normal activities within 1\u20132 weeks, compared to 6\u20138 weeks for traditional open surgery. You\u2019ll typically go home the same day or the next day." },
         { q: "Is robotic surgery safe?", a: "Yes. Robotic-assisted surgery has an excellent safety profile and is associated with less blood loss, fewer complications, and lower infection rates compared to open procedures." },
-        { q: "Will I have visible scars?", a: "Robotic surgery uses incisions that are typically 8\u201312mm \u2014 much smaller than traditional surgery. Most patients find their scars are barely noticeable once healed." },
+        { q: "Will I have visible scars?", a: "Robotic surgery uses incisions that are typically 8\u201312mm, much smaller than traditional surgery. Most patients find their scars are barely noticeable once healed." },
         { q: "Does insurance cover robotic surgery?", a: "Most major insurance plans cover robotic-assisted gynecologic procedures. Our billing team will verify your coverage and discuss any out-of-pocket costs before your procedure." },
       ]} />
 

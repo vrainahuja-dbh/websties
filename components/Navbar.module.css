@@ -14,18 +14,35 @@
   display: flex; gap: 32px; list-style: none; align-items: center;
 }
 
-.navLinks a {
+.navLinks a, .dropdownLabel {
+  font-family: var(--font-epilogue), sans-serif;
   font-size: 12px; font-weight: 500; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--charcoal);
   text-decoration: none; transition: color 0.2s;
 }
-.navLinks a:hover { color: var(--plum); }
+.navLinks a:hover, .dropdownLabel:hover { color: var(--plum); }
 
 /* ── DROPDOWN ── */
 .dropdown {
   position: relative;
 }
 
+.dropdownToggle {
+  display: flex; align-items: center; gap: 6px;
+  background: none; border: none; padding: 0; cursor: pointer;
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--mid-gray);
+  transition: transform 0.25s ease;
+}
+
+.dropdownToggleOpen .chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown panel — hidden by default, shown via .dropdownMenuOpen */
 .dropdownMenu {
   display: none;
   position: absolute;
@@ -35,6 +52,10 @@
   padding-top: 16px;
   list-style: none;
   z-index: 200;
+}
+
+.dropdownMenuOpen {
+  display: block;
 }
 
 .dropdownMenu::before {
@@ -50,10 +71,6 @@
   border-left: 1px solid var(--light-gray);
   rotate: 45deg;
   z-index: 201;
-}
-
-.dropdown:hover .dropdownMenu {
-  display: block;
 }
 
 .dropdownMenu li {
@@ -115,46 +132,126 @@
 .line2Open { opacity: 0; }
 .line3Open { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 768px) {
-  .nav { padding: 16px 20px; flex-wrap: wrap; }
-  .navLogo img { height: 56px; }
+/* ═══════════════════════════════════════════
+   MOBILE NAV  (≤ 1024px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .nav { padding: 16px 24px; flex-wrap: wrap; }
+  .navLogo img { height: 60px; }
 
   .navToggleLabel {
     display: flex;
     margin-left: auto;
   }
 
+  /* ── Link list ── */
   .navLinks {
     display: none; width: 100%; flex-basis: 100%; order: 99;
     flex-direction: column; gap: 0;
-    padding: 20px 0; border-top: 1px solid var(--light-gray); margin-top: 12px;
+    align-items: stretch;
+    padding: 16px 0 24px; border-top: 1px solid var(--light-gray); margin-top: 12px;
+    max-height: calc(100vh - 100px);
+    max-height: calc(100dvh - 100px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .navLinksOpen { display: flex; }
-  .navLinks a { padding: 12px 0; font-size: 14px; }
 
+  /* Top-level items */
+  .navLinks > li {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .navLinks > li:last-child {
+    border-bottom: none;
+  }
+
+  .navLinks > li > a {
+    display: block;
+    padding: 16px 0;
+    font-family: var(--font-epilogue), sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-align: left;
+  }
+
+  /* ── Dropdown toggle button (mobile) ── */
+  .dropdownToggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .dropdownLabel {
+    font-family: var(--font-epilogue), sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08em !important;
+    text-align: left !important;
+  }
+
+  .chevron {
+    display: block;
+  }
+
+  /* ── Dropdown content (mobile) — collapsed by default ── */
   .dropdown { position: static; }
+
   .dropdownMenu {
     display: block;
     position: static;
     transform: none;
-    padding-top: 0;
-    padding-left: 16px;
+    padding: 0 0 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
   }
   .dropdownMenu::before { display: none; }
+
+  .dropdownMenuOpen {
+    max-height: 500px;
+    padding: 0 0 12px 16px;
+  }
+
   .dropdownMenu li {
     background: none;
     border: none !important;
     border-radius: 0 !important;
+    white-space: normal;
   }
   .dropdownMenu li a {
-    padding: 8px 0 !important;
+    padding: 10px 0 !important;
+    font-family: var(--font-epilogue), sans-serif !important;
     font-size: 13px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.02em !important;
+    text-transform: none !important;
+    text-align: left !important;
     color: var(--mid-gray) !important;
+    transition: color 0.15s;
   }
   .dropdownMenu li a:hover {
     background: none;
     color: var(--plum) !important;
   }
+
+  /* ── CTA button (mobile) ── */
+  .navCta {
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    display: block !important;
+    padding: 14px 22px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 16px 20px; }
+  .navLogo img { height: 56px; }
 }
 
 @media (max-width: 480px) {

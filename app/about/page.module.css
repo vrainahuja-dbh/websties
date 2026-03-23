@@ -1,5 +1,5 @@
 .aboutPage {
-  padding-top: 120px;
+  padding-top: 160px;
 }
 
 .aboutHero {
@@ -84,12 +84,13 @@
     gap: 40px;
   }
   .aboutImage {
-    max-width: 500px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
+  .aboutPage { padding-top: 90px; }
   .aboutHero {
     padding: 60px 24px;
   }

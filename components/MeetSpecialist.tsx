@@ -49,7 +49,7 @@ export default function MeetSpecialist() {
           </div>
           <p className={styles.meetExtra}>
             A decade-plus of surgical excellence, with patients who keep coming
-            back &mdash; and sending their families.
+            back and sending their families.
           </p>
           <Link href="/providers/dr-asbery" className="btn-plum">
             Meet Dr. Asbery &rarr;

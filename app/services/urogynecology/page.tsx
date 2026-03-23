@@ -34,12 +34,12 @@ const features = [
 const conditions = [
   { name: "Urinary Incontinence", desc: "Involuntary urine leakage during coughing, sneezing, exercise, or with sudden urges. Treatments range from pelvic floor therapy to minimally invasive sling procedures with high success rates." },
   { name: "Pelvic Organ Prolapse", desc: "When the uterus, bladder, or rectum drops from its normal position due to weakened pelvic support. You may feel pressure, heaviness, or a bulging sensation. Both surgical and non-surgical options are available." },
-  { name: "Overactive Bladder", desc: "Frequent, sudden urges to urinate that are hard to control, sometimes with leakage. This is not a normal part of aging \u2014 medications, nerve stimulation, and behavioral therapies can provide significant relief." },
+  { name: "Overactive Bladder", desc: "Frequent, sudden urges to urinate that are hard to control, sometimes with leakage. This is not a normal part of aging. Medications, nerve stimulation, and behavioral therapies can provide significant relief." },
   { name: "Fecal Incontinence", desc: "Difficulty controlling bowel movements, which can range from occasional leakage to complete loss of control. This is more common than most people think, and effective treatments exist." },
   { name: "Recurrent UTIs", desc: "Repeated urinary tract infections (3 or more per year) that may signal an underlying issue. We investigate root causes and develop prevention strategies beyond repeated antibiotics." },
   { name: "Pelvic Floor Dysfunction", desc: "Difficulty coordinating the muscles of the pelvic floor, leading to problems with urination, bowel movements, or pelvic pain. Specialized therapy and treatment can retrain these muscles." },
   { name: "Vaginal Prolapse", desc: "The vaginal walls weaken and bulge inward, often after childbirth or menopause. You may notice a feeling of fullness or tissue protruding. Pessaries or surgical repair can restore support." },
-  { name: "Bladder Prolapse (Cystocele)", desc: "The bladder drops into the vaginal wall, causing pressure, incomplete emptying, and sometimes incontinence. Severity varies \u2014 mild cases may be managed conservatively, while advanced cases benefit from surgical repair." },
+  { name: "Bladder Prolapse (Cystocele)", desc: "The bladder drops into the vaginal wall, causing pressure, incomplete emptying, and sometimes incontinence. Severity varies. Mild cases may be managed conservatively, while advanced cases benefit from surgical repair." },
 ];
 
 export default function UrogynecologyPage() {
@@ -47,7 +47,7 @@ export default function UrogynecologyPage() {
     <main className={styles.servicePage}>
       <section className={styles.serviceHero}>
         <div className={styles.heroInner}>
-          <Link href="/#services" className={styles.backLink}>
+          <Link href="/services" className={styles.backLink}>
             &larr; All Services
           </Link>
           <div className={styles.heroIcon}>{"\u{1F3E5}"}</div>

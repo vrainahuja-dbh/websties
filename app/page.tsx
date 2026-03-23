@@ -4,6 +4,8 @@ import Services from "@/components/Services";
 import Conditions from "@/components/Conditions";
 import MeetSpecialist from "@/components/MeetSpecialist";
 import MeetTeam from "@/components/MeetTeam";
+import FirstVisit from "@/components/FirstVisit";
+import Insurance from "@/components/Insurance";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
@@ -17,6 +19,8 @@ export default function Home() {
       <Conditions />
       <MeetSpecialist />
       <MeetTeam />
+      <FirstVisit />
+      <Insurance />
       <WhyChooseUs />
       <Testimonials />
       <CTA />

@@ -1,5 +1,5 @@
 .providerPage {
-  padding-top: 120px;
+  padding-top: 160px;
 }
 
 /* ── HERO ── */
@@ -26,6 +26,7 @@
 
 .heroContent {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .backLink {
@@ -46,39 +47,21 @@
 
 .heroName {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(36px, 4vw, 56px);
+  font-size: clamp(28px, 3vw, 40px);
   font-weight: 700;
   color: var(--plum-dark);
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
 .heroTitle {
   font-family: var(--font-epilogue), sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--plum);
   font-style: italic;
-  margin-bottom: 24px;
-}
-
-.credentials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 32px;
-}
-
-.credTag {
-  background: var(--off-white);
-  border: 1px solid var(--light-gray);
-  padding: 6px 16px;
-  border-radius: 100px;
-  font-family: var(--font-epilogue), sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--plum);
+  margin-bottom: 0;
 }
 
 .heroQuote {
@@ -94,28 +77,36 @@
   font-style: italic;
 }
 
-/* ── BIO ── */
-.bioSection {
-  background: var(--warm-white);
-  padding: 80px 60px;
+/* ── INLINE BIO ── */
+.heroBio {
+  margin-top: 28px;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 24px;
 }
 
-.bioInner {
-  max-width: 780px;
-  margin: 0 auto;
+.heroBioLabel {
+  font-family: var(--font-fraunces), serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--plum-dark);
+  margin-bottom: 16px;
 }
 
-.bioText {
-  margin-top: 32px;
-}
-
-.bioText p {
+.heroBio p {
   font-family: var(--font-epilogue), sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.85;
   color: var(--mid-gray);
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+
+.heroBio p:last-of-type {
+  margin-bottom: 0;
+}
+
+.heroBioButton {
+  margin-top: 28px;
 }
 
 /* ── HIGHLIGHTS ── */
@@ -206,7 +197,6 @@
     margin: 0 auto;
   }
   .heroContent { padding-top: 0; }
-  .bioSection { padding: 48px 24px; }
   .highlightsSection { padding: 48px 24px; }
   .highlightsGrid { grid-template-columns: 1fr; gap: 28px; }
   .ctaSection { padding: 48px 24px; }
@@ -217,8 +207,7 @@
 
 @media (max-width: 480px) {
   .providerHero { padding: 0 20px 36px; }
-  .heroName { font-size: clamp(28px, 7vw, 40px); }
-  .bioSection { padding: 36px 20px; }
+  .heroName { font-size: clamp(24px, 6vw, 32px); }
   .highlightsSection { padding: 36px 20px; }
   .ctaSection { padding: 36px 20px; }
 }

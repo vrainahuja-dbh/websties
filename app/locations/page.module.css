@@ -1,0 +1,227 @@
+.page {
+  padding-top: 160px;
+}
+
+.hero {
+  background: var(--plum-dark);
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero :global(.section-label) {
+  color: var(--sage-light);
+}
+
+.hero :global(.section-title) {
+  color: white;
+  margin: 0 auto;
+}
+
+.hero :global(.section-subtitle) {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 16px auto 0;
+}
+
+/* ── LOCATION CARD ── */
+.locationsList {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.locationCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+}
+
+.locationMap {
+  min-height: 400px;
+  position: relative;
+}
+
+.locationMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.locationInfo {
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locationLabel {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 12px;
+}
+
+.locationName {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--plum-dark);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.locationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.locationDetail {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.detailIcon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.detailText {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--mid-gray);
+  font-weight: 300;
+}
+
+.detailText strong {
+  font-weight: 600;
+  color: var(--plum-dark);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.locationButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── REGION SECTION ── */
+.regionSection {
+  background: var(--off-white);
+  padding: 80px 60px;
+}
+
+.regionInner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.regionTitle {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-weight: 700;
+  color: var(--plum-dark);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.regionDesc {
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--mid-gray);
+  font-weight: 300;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+.regionTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.regionTag {
+  background: white;
+  border: 1px solid var(--light-gray);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--charcoal);
+}
+
+/* ── CTA ── */
+.ctaSection {
+  padding: 80px 60px;
+  text-align: center;
+  background: var(--warm-white);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .locationCard {
+    grid-template-columns: 1fr;
+  }
+  .locationMap {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page { padding-top: 90px; }
+  .hero { padding: 60px 24px; }
+  .locationsList { padding: 48px 24px; gap: 32px; }
+  .locationInfo { padding: 28px 24px; }
+  .locationMap { min-height: 250px; }
+  .regionSection { padding: 48px 24px; }
+  .ctaSection { padding: 48px 24px; }
+  .locationButtons { flex-direction: column; }
+  .locationButtons :global(.btn-plum),
+  .locationButtons :global(.btn-sage) { width: 100%; text-align: center; }
+  .ctaButtons { flex-direction: column; }
+  .ctaButtons :global(.btn-plum),
+  .ctaButtons :global(.btn-sage) { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 48px 20px; }
+  .locationsList { padding: 36px 20px; }
+  .regionSection { padding: 36px 20px; }
+  .ctaSection { padding: 36px 20px; }
+}

@@ -8,13 +8,6 @@ export const metadata = {
     "Julie Rinehart, CNM, CNP is a certified nurse-midwife and nurse practitioner offering holistic women's health services at Asbery & Associates.",
 };
 
-const credentials = [
-  "CNM, CNP",
-  "Georgetown University, M.S. 2017",
-  "Board Certified 2018",
-  "24 Years Nursing Experience",
-];
-
 const highlights = [
   {
     icon: "\u{1F3E5}",
@@ -68,42 +61,29 @@ export default function JulieRinehartPage() {
             <p className={styles.heroTitle}>
               Certified Nurse-Midwife &amp; Nurse Practitioner
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Julie Rinehart graduated from Georgetown University in Washington,
+                DC with a Master&apos;s of Science in the Certified Nurse Midwife
+                and Nurse Practitioner dual degree program in December 2017 and
+                became board certified in 2018.
+              </p>
+              <p>
+                Julie has 24 years of experience in nursing, with 15 of those
+                years dedicated to Women&apos;s Health, including management
+                of antepartum, intrapartum, and postpartum patient care, surgical
+                first-assist for cesarean sections, natural birthing methods, and
+                breastfeeding support. She is beginning her career with Asbery
+                &amp; Associates in the medical office setting, where she offers a
+                wide variety of services in Women&apos;s Health and OB-GYN.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            Holistic Care for Every Stage
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Julie Rinehart graduated from Georgetown University in Washington,
-              DC with a Master&apos;s of Science in the Certified Nurse Midwife
-              and Nurse Practitioner dual degree program in December 2017 and
-              became board certified in 2018.
-            </p>
-            <p>
-              Julie has 24 years of experience in nursing, with 15 of those
-              years dedicated to Women&apos;s Health &mdash; including management
-              of antepartum, intrapartum, and postpartum patient care, surgical
-              first-assist for cesarean sections, natural birthing methods, and
-              breastfeeding support. She is beginning her career with Asbery
-              &amp; Associates in the medical office setting, where she offers a
-              wide variety of services in Women&apos;s Health and OB-GYN.
-            </p>
           </div>
         </div>
       </section>

@@ -26,12 +26,11 @@ export default function Conditions() {
       <div className={styles.inner}>
         <p className={styles.label}>Conditions We Treat</p>
         <h2 className={styles.title}>
-          If You&apos;ve Been Searching for
-          <br />
-          Answers, <em>We Find Them</em>
+          If You&apos;ve Been Searching for Answers,{" "}
+          <em>We Find Them</em>
         </h2>
         <p className={styles.subtitle}>
-          We treat the full range of gynecologic conditions &ndash; including those
+          We treat the full range of gynecologic conditions, including those
           that can be difficult to get diagnosed and taken seriously.
         </p>
 
@@ -53,8 +52,8 @@ export default function Conditions() {
             </h3>
             <p className={styles.helpDesc}>
               Don&apos;t let uncertainty stop you from getting care. Call our office and our
-              team will help you understand if our services are right for your needs &ndash;
-              no referral required for most conditions.
+              team will help you understand if our services are right for your needs.
+              No referral required for most conditions.
             </p>
             <Link href="/#contact" className={styles.helpBtn}>
               Call Our Office

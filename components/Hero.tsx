@@ -31,7 +31,7 @@ export default function Hero() {
           src="/hero-image.jpg"
           alt="Dr. Asbery with robotic surgery system"
           fill
-          style={{ objectFit: "cover", objectPosition: "center top" }}
+          style={{ objectFit: "cover", objectPosition: "center 20%" }}
           priority
         />
         <div className={styles.heroStatCard}>

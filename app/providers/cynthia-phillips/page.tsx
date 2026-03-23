@@ -8,13 +8,6 @@ export const metadata = {
     "Cynthia Phillips, FNP is a family nurse practitioner providing compassionate women's wellness care at Asbery & Associates in Southern Illinois.",
 };
 
-const credentials = [
-  "FNP",
-  "Purdue University, M.S. 2017",
-  "Board Certified 2018",
-  "18 Years Nursing Experience",
-];
-
 const highlights = [
   {
     icon: "\u{1F3E5}",
@@ -68,41 +61,28 @@ export default function CynthiaPhillipsPage() {
             <p className={styles.heroTitle}>
               Family Nurse Practitioner
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Cindy Phillips attended Purdue University and graduated in 2017
+                with a Master&apos;s of Science in Nursing, Family Nurse
+                Practitioner. She became board certified in February 2018.
+              </p>
+              <p>
+                Cindy brings 18 years of nursing experience including hospital
+                staff nurse, circulating surgical nurse, and Assistant Director of
+                Surgical Services prior to beginning her career as a Nurse
+                Practitioner in 2018. She joined Asbery &amp; Associates in
+                practice in May 2023 and continues to serve the Mt. Vernon and
+                surrounding areas offering a wide variety of Women&apos;s Health
+                Services.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            Compassionate, Patient-Centered Care
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Cindy Phillips attended Purdue University and graduated in 2017
-              with a Master&apos;s of Science in Nursing, Family Nurse
-              Practitioner. She became board certified in February 2018.
-            </p>
-            <p>
-              Cindy brings 18 years of nursing experience including hospital
-              staff nurse, circulating surgical nurse, and Assistant Director of
-              Surgical Services prior to beginning her career as a Nurse
-              Practitioner in 2018. She joined Asbery &amp; Associates in
-              practice in May 2023 and continues to serve the Mt. Vernon and
-              surrounding areas offering a wide variety of Women&apos;s Health
-              Services.
-            </p>
           </div>
         </div>
       </section>

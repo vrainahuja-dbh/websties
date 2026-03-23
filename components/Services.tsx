@@ -6,7 +6,7 @@ const services = [
     icon: "\u{1F916}",
     name: "Robotic & Minimally Invasive Surgery",
     slug: "robotic-surgery",
-    desc: "Advanced laparoscopic and robotic procedures for faster recovery, less pain, and better outcomes \u2014 all locally.",
+    desc: "Advanced laparoscopic and robotic procedures for faster recovery, less pain, and better outcomes, all available locally.",
   },
   {
     icon: "\u{1F3E5}",

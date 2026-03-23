@@ -108,10 +108,12 @@
   .section { padding: 60px 24px; }
   .header { margin-bottom: 36px; }
   .title { font-size: clamp(26px, 5vw, 36px); }
+  .track { gap: 20px; }
   .card { flex: 0 0 260px; }
 }
 
 @media (max-width: 480px) {
-  .section { padding: 48px 20px; }
-  .card { flex: 0 0 240px; }
+  .section { padding: 48px 16px; }
+  .track { gap: 16px; }
+  .card { flex: 0 0 220px; }
 }

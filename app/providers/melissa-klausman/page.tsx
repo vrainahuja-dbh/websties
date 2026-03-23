@@ -8,13 +8,6 @@ export const metadata = {
     "Melissa Klausman, WHNP-BC, CNM specializes in women's health and midwifery at Asbery & Associates in Southern Illinois.",
 };
 
-const credentials = [
-  "WHNP-BC, CNM",
-  "Georgetown University, M.S. 2015",
-  "Board Certified 2016",
-  "U.S. Air Force Veteran",
-];
-
 const highlights = [
   {
     icon: "\u{1F393}",
@@ -68,42 +61,29 @@ export default function MelissaKlausmanPage() {
             <p className={styles.heroTitle}>
               Women&apos;s Health Nurse Practitioner &amp; Certified Nurse-Midwife
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Melissa Klausman attended Georgetown University School of Nursing
+                in Washington, D.C. She graduated in 2015 with a Master&apos;s
+                Degree of Science in Nursing, having completed a dual degree
+                program in both Nurse Midwifery and Women&apos;s Health Nurse
+                Practitioner. She became board certified in 2016.
+              </p>
+              <p>
+                Melissa brings an extensive nursing background having practiced in
+                a hospital telemetry and infectious disease setting, as well as
+                being a United States Air Force Veteran where she served as a
+                Communications Officer. She joined Asbery &amp; Associates in
+                January 2021 and continues to offer a wide variety of
+                Women&apos;s Health Services.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            Specialized in Women&apos;s Wellness
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Melissa Klausman attended Georgetown University School of Nursing
-              in Washington, D.C. She graduated in 2015 with a Master&apos;s
-              Degree of Science in Nursing, having completed a dual degree
-              program in both Nurse Midwifery and Women&apos;s Health Nurse
-              Practitioner. She became board certified in 2016.
-            </p>
-            <p>
-              Melissa brings an extensive nursing background having practiced in
-              a hospital telemetry and infectious disease setting, as well as
-              being a United States Air Force Veteran where she served as a
-              Communications Officer. She joined Asbery &amp; Associates in
-              January 2021 and continues to offer a wide variety of
-              Women&apos;s Health Services.
-            </p>
           </div>
         </div>
       </section>

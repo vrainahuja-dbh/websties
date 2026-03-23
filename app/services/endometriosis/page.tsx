@@ -33,9 +33,9 @@ const features = [
 
 const conditions = [
   { name: "Endometriosis", desc: "Tissue similar to the uterine lining grows outside the uterus, attaching to organs in the pelvis. It can cause severe pain, heavy periods, and fertility challenges. Excision surgery is the gold standard for treatment." },
-  { name: "Chronic Pelvic Pain", desc: "Persistent pain below the belly button lasting 6 months or more. It can have multiple overlapping causes \u2014 we conduct thorough evaluations to identify all contributing factors, not just the most obvious one." },
-  { name: "Painful Periods (Dysmenorrhea)", desc: "Cramping and pain during menstruation that goes beyond typical discomfort. If your periods regularly keep you from work, school, or daily activities, that\u2019s not normal \u2014 it\u2019s a sign something treatable may be happening." },
-  { name: "Pain During Intercourse", desc: "Deep or surface-level pain during or after sex (dyspareunia). This can be caused by endometriosis, pelvic floor tension, hormonal changes, or other conditions \u2014 and it\u2019s something we can help with." },
+  { name: "Chronic Pelvic Pain", desc: "Persistent pain below the belly button lasting 6 months or more. It can have multiple overlapping causes. We conduct thorough evaluations to identify all contributing factors, not just the most obvious one." },
+  { name: "Painful Periods (Dysmenorrhea)", desc: "Cramping and pain during menstruation that goes beyond typical discomfort. If your periods regularly keep you from work, school, or daily activities, that\u2019s not normal. It\u2019s a sign something treatable may be happening." },
+  { name: "Pain During Intercourse", desc: "Deep or surface-level pain during or after sex (dyspareunia). This can be caused by endometriosis, pelvic floor tension, hormonal changes, or other conditions, and it\u2019s something we can help with." },
   { name: "Pelvic Adhesions", desc: "Bands of scar tissue that form between pelvic organs, often after surgery, infection, or endometriosis. They can pull organs out of position and cause chronic pain, bowel issues, or fertility problems." },
   { name: "Adenomyosis", desc: "Similar to endometriosis, but the tissue grows into the muscular wall of the uterus itself. It causes heavy, painful periods and a feeling of bloating or pressure. Often misdiagnosed as fibroids." },
   { name: "Vulvodynia", desc: "Chronic pain or discomfort around the opening of the vagina with no identifiable cause. It can make sitting, exercise, and intimacy difficult. Multidisciplinary treatment approaches can provide significant relief." },
@@ -47,7 +47,7 @@ export default function EndometriosisPage() {
     <main className={styles.servicePage}>
       <section className={styles.serviceHero}>
         <div className={styles.heroInner}>
-          <Link href="/#services" className={styles.backLink}>
+          <Link href="/services" className={styles.backLink}>
             &larr; All Services
           </Link>
           <div className={styles.heroIcon}>{"\u{1F49B}"}</div>

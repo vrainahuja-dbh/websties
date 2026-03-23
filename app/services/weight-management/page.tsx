@@ -22,7 +22,7 @@ const features = [
   {
     icon: "\u{1F4CB}",
     title: "Personalized Plans",
-    desc: "Individualized programs that consider your medical history, lifestyle, hormonal profile, and personal goals \u2014 not one-size-fits-all solutions.",
+    desc: "Individualized programs that consider your medical history, lifestyle, hormonal profile, and personal goals, not one-size-fits-all solutions.",
   },
   {
     icon: "\u{1F49B}",
@@ -33,7 +33,7 @@ const features = [
 
 const conditions = [
   { name: "Obesity & Overweight", desc: "When excess weight begins affecting your health, energy, or quality of life. We address the medical factors that make losing weight feel impossible despite your best efforts." },
-  { name: "Hormonal Weight Gain", desc: "Weight gain driven by hormonal shifts \u2014 from estrogen and progesterone changes to cortisol and testosterone imbalances. Identifying the specific hormonal cause is key to effective treatment." },
+  { name: "Hormonal Weight Gain", desc: "Weight gain driven by hormonal shifts, from estrogen and progesterone changes to cortisol and testosterone imbalances. Identifying the specific hormonal cause is key to effective treatment." },
   { name: "PCOS-Related Weight", desc: "Polycystic ovary syndrome often causes weight gain, especially around the midsection, due to insulin resistance and androgen excess. Targeted treatment can break the cycle." },
   { name: "Menopausal Weight Changes", desc: "The hormonal shifts of menopause slow metabolism and change where your body stores fat. Understanding these changes allows us to tailor strategies that actually work for your new physiology." },
   { name: "Insulin Resistance", desc: "When your cells don\u2019t respond normally to insulin, leading to elevated blood sugar, increased fat storage, and difficulty losing weight. Often a hidden driver of stubborn weight gain." },
@@ -47,7 +47,7 @@ export default function WeightManagementPage() {
     <main className={styles.servicePage}>
       <section className={styles.serviceHero}>
         <div className={styles.heroInner}>
-          <Link href="/#services" className={styles.backLink}>
+          <Link href="/services" className={styles.backLink}>
             &larr; All Services
           </Link>
           <div className={styles.heroIcon}>{"\u2696\uFE0F"}</div>
@@ -127,7 +127,7 @@ export default function WeightManagementPage() {
       </section>
 
       <FAQ items={[
-        { q: "How is medical weight management different from dieting?", a: "Medical weight management addresses the underlying medical, hormonal, and metabolic factors that affect your weight \u2014 not just calories and exercise. We use lab work, medical assessments, and when appropriate, medications to support sustainable results." },
+        { q: "How is medical weight management different from dieting?", a: "Medical weight management addresses the underlying medical, hormonal, and metabolic factors that affect your weight, not just calories and exercise. We use lab work, medical assessments, and when appropriate, medications to support sustainable results." },
         { q: "Will I need to take medication?", a: "Not necessarily. Medication is one tool in our approach and is considered based on your individual assessment. Some patients achieve their goals with nutritional guidance and hormonal optimization alone." },
         { q: "How do hormones affect weight?", a: "Hormonal imbalances \u2014 from thyroid dysfunction, PCOS, insulin resistance, or menopause \u2014 can make weight loss extremely difficult despite diet and exercise. Identifying and addressing these imbalances is often key to success." },
         { q: "How often will I have appointments?", a: "Initially, visits are typically every 2\u20134 weeks for monitoring and adjustments. As you progress, visits become less frequent. We\u2019re with you for the long term, not just the first few pounds." },

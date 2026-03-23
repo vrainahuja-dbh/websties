@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
   .statsStrip { padding: 0 16px; flex-direction: column; }
-  .statBlock { padding: 20px 16px; }
+  .statBlock { padding: 20px 16px; width: 100%; }
 }
 
 @media (max-width: 480px) {

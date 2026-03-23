@@ -8,15 +8,6 @@ export const metadata = {
     "David S. Asbery, M.D., FACOG is a board-certified OB-GYN surgeon specializing in robotic surgery, urogynecology, and minimally invasive procedures in Southern Illinois.",
 };
 
-const credentials = [
-  "M.D.",
-  "FACOG",
-  "Board Certified OB-GYN",
-  "Robotic Surgery",
-  "Urogynecology",
-  "Minimally Invasive Surgery",
-];
-
 const highlights = [
   {
     icon: "\u{1F3AF}",
@@ -36,7 +27,7 @@ const highlights = [
   {
     icon: "\u{1F4CD}",
     title: "Regionally Serving",
-    desc: "Patients travel from Effingham to Metropolis for Dr. Asbery\u2019s specialized expertise \u2014 world-class care without the big-city drive.",
+    desc: "Patients travel from Effingham to Metropolis for Dr. Asbery\u2019s specialized expertise. World-class care without the big-city drive.",
   },
 ];
 
@@ -71,51 +62,37 @@ export default function DrAsberyPage() {
             <p className={styles.heroTitle}>
               Board-Certified OB-GYN Surgeon
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
-            </div>
             <div className={styles.heroQuote}>
               &ldquo;The doctor is more than just a surgeon, more than just a
               scientist. My goal is to better the community &mdash; not just
               medically, but to shepherd the community.&rdquo;
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* BIO */}
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            A Career Built on Excellence &amp; Compassion
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Dr. Asbery has dedicated his career to bringing world-class
-              gynecologic surgical expertise to Southern Illinois. His approach
-              combines cutting-edge techniques with a personal commitment to
-              listening to each patient.
-            </p>
-            <p>
-              As the first robotic surgeon in the Mt. Vernon area, Dr. Asbery
-              brought access to robotic and minimally invasive procedures that
-              patients would otherwise need to travel to St. Louis or
-              Indianapolis to receive. His commitment to advancing surgical
-              techniques while maintaining a deeply personal patient relationship
-              sets his practice apart.
-            </p>
-            <p>
-              A decade-plus of surgical excellence, with patients who keep coming
-              back &mdash; and sending their families.
-            </p>
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Dr. Asbery has dedicated his career to bringing world-class
+                gynecologic surgical expertise to Southern Illinois. His approach
+                combines cutting-edge techniques with a personal commitment to
+                listening to each patient.
+              </p>
+              <p>
+                As the first robotic surgeon in the Mt. Vernon area, Dr. Asbery
+                brought access to robotic and minimally invasive procedures that
+                patients would otherwise need to travel to St. Louis or
+                Indianapolis to receive. His commitment to advancing surgical
+                techniques while maintaining a deeply personal patient relationship
+                sets his practice apart.
+              </p>
+              <p>
+                A decade-plus of surgical excellence, with patients who keep coming
+                back and sending their families.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

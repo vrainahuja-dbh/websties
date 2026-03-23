@@ -8,18 +8,11 @@ export const metadata = {
     "Paul Havrilka, FNP is a family nurse practitioner providing dedicated, patient-centered gynecologic and wellness care at Asbery & Associates.",
 };
 
-const credentials = [
-  "FNP",
-  "Frontier Nursing University, M.S. 2013",
-  "Board Certified 2013",
-  "Family Medicine & Women\u2019s Health",
-];
-
 const highlights = [
   {
     icon: "\u{1F3E5}",
     title: "Diverse Clinical Experience",
-    desc: "Paul\u2019s career spans medical office practice, hospital and emergency department settings, and running his own solo practice \u2014 bringing well-rounded expertise to patient care.",
+    desc: "Paul\u2019s career spans medical office practice, hospital and emergency department settings, and running his own solo practice, bringing well-rounded expertise to patient care.",
   },
   {
     icon: "\u{1F393}",
@@ -68,41 +61,28 @@ export default function PaulHavrilkaPage() {
             <p className={styles.heroTitle}>
               Family Nurse Practitioner
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Paul Havrilka graduated from Frontier Nursing University in 2013
+                with a Master&apos;s of Science in Nursing. He became Board
+                Certified in August 2013 and began his career in a medical office
+                setting.
+              </p>
+              <p>
+                He later practiced in a hospital setting including the emergency
+                department until he opened his own office and practiced solo until
+                2016, when he and his family relocated to Alaska. Paul joined
+                Asbery &amp; Associates in 2019 and offers a wide variety of
+                Family Medicine and Women&apos;s Health Services in both the
+                McLeansboro and Mt. Vernon Family Medicine locations.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            Patient-Centered, Community-Driven
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Paul Havrilka graduated from Frontier Nursing University in 2013
-              with a Master&apos;s of Science in Nursing. He became Board
-              Certified in August 2013 and began his career in a medical office
-              setting.
-            </p>
-            <p>
-              He later practiced in a hospital setting including the emergency
-              department until he opened his own office and practiced solo until
-              2016, when he and his family relocated to Alaska. Paul joined
-              Asbery &amp; Associates in 2019 and offers a wide variety of
-              Family Medicine and Women&apos;s Health Services in both the
-              McLeansboro and Mt. Vernon Family Medicine locations.
-            </p>
           </div>
         </div>
       </section>

@@ -32,13 +32,13 @@ const features = [
 ];
 
 const conditions = [
-  { name: "Unexplained Infertility", desc: "When standard testing doesn\u2019t reveal a clear cause for difficulty conceiving. This doesn\u2019t mean nothing can be done \u2014 many couples with unexplained infertility respond well to initial treatments like ovulation support." },
+  { name: "Unexplained Infertility", desc: "When standard testing doesn\u2019t reveal a clear cause for difficulty conceiving. This doesn\u2019t mean nothing can be done. Many couples with unexplained infertility respond well to initial treatments like ovulation support." },
   { name: "Ovulatory Disorders", desc: "Irregular or absent ovulation is one of the most common causes of infertility. Conditions like PCOS, thyroid disorders, or hormonal imbalances can disrupt your cycle, but medication can often restore regular ovulation." },
   { name: "PCOS-Related Infertility", desc: "Polycystic ovary syndrome affects ovulation, making it harder to conceive. The good news: many women with PCOS respond well to ovulation-inducing medications, often achieving pregnancy without advanced fertility treatments." },
   { name: "Endometriosis-Related Infertility", desc: "Endometriosis can affect fertility by distorting pelvic anatomy, creating inflammation, or damaging eggs and sperm. Surgical treatment combined with fertility support can improve your chances significantly." },
   { name: "Tubal Factor Evaluation", desc: "Blocked or damaged fallopian tubes prevent the egg from reaching the uterus. We use imaging like HSG (hysterosalpingography) to evaluate tubal health and determine the best path forward." },
   { name: "Recurrent Pregnancy Loss", desc: "Two or more pregnancy losses can be devastating. We investigate potential causes including hormonal issues, uterine abnormalities, clotting disorders, and genetic factors to help prevent future losses." },
-  { name: "Fertility Challenges", desc: "If you\u2019ve been trying to conceive without success, we provide a supportive, thorough evaluation to understand your unique situation and develop a plan \u2014 whether that\u2019s treatment here or a coordinated referral." },
+  { name: "Fertility Challenges", desc: "If you\u2019ve been trying to conceive without success, we provide a supportive, thorough evaluation to understand your unique situation and develop a plan, whether that\u2019s treatment here or a coordinated referral." },
   { name: "Pre-Conception Counseling", desc: "Planning for pregnancy before you start trying. We review your health history, medications, and lifestyle factors, optimize any existing conditions, and ensure you\u2019re in the best possible position to conceive." },
 ];
 
@@ -47,7 +47,7 @@ export default function InfertilityTreatmentPage() {
     <main className={styles.servicePage}>
       <section className={styles.serviceHero}>
         <div className={styles.heroInner}>
-          <Link href="/#services" className={styles.backLink}>
+          <Link href="/services" className={styles.backLink}>
             &larr; All Services
           </Link>
           <div className={styles.heroIcon}>{"\u{1F338}"}</div>
@@ -69,7 +69,7 @@ export default function InfertilityTreatmentPage() {
             <p>
               Starting a family doesn&apos;t always happen as planned. If
               you&apos;ve been trying to conceive without success, our team can
-              help with initial evaluations and treatments &mdash; right here in
+              help with initial evaluations and treatments, right here in
               Southern Illinois, without the need to travel to a fertility
               clinic for the first steps.
             </p>

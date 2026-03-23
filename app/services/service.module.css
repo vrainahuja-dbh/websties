@@ -1,5 +1,5 @@
 .servicePage {
-  padding-top: 120px;
+  padding-top: 160px;
 }
 
 /* ── HERO ── */
@@ -35,20 +35,20 @@
 .backLink:hover { color: white; }
 
 .heroIcon {
-  font-size: 48px; margin-bottom: 20px;
+  font-size: 36px; margin-bottom: 16px;
 }
 
 .heroTitle {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(36px, 4vw, 56px); font-weight: 700;
-  color: white; line-height: 1.1;
+  font-size: clamp(32px, 3.5vw, 48px); font-weight: 600;
+  color: white; line-height: 1.15;
   letter-spacing: -0.02em; margin-bottom: 16px;
 }
 
 .heroSubtitle {
   font-family: var(--font-epilogue), sans-serif;
-  font-size: 18px; line-height: 1.75; font-weight: 300;
-  color: rgba(255,255,255,0.7); max-width: 600px;
+  font-size: 16px; line-height: 1.75; font-weight: 300;
+  color: rgba(255,255,255,0.7); max-width: 540px;
 }
 
 /* ── OVERVIEW ── */

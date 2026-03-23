@@ -8,13 +8,6 @@ export const metadata = {
     "Jo Ann Dudley, M.D., FACOG is a board-certified OB-GYN physician providing compassionate, comprehensive gynecologic care in Southern Illinois.",
 };
 
-const credentials = [
-  "M.D., FACOG",
-  "Board Certified OB-GYN",
-  "Georgetown University School of Medicine, 1985",
-  "30+ Years in Practice",
-];
-
 const highlights = [
   {
     icon: "\u{1F393}",
@@ -29,7 +22,7 @@ const highlights = [
   {
     icon: "\u{1F4DC}",
     title: "Professional Memberships",
-    desc: "Active member of ACOG, AAGL, ASCCP, and ASRM \u2014 staying current with the latest advances in women\u2019s health and gynecologic care.",
+    desc: "Active member of ACOG, AAGL, ASCCP, and ASRM, staying current with the latest advances in women\u2019s health and gynecologic care.",
   },
   {
     icon: "\u{1F91D}",
@@ -68,43 +61,30 @@ export default function DrDudleyPage() {
             <p className={styles.heroTitle}>
               Board-Certified OB-GYN Physician
             </p>
-            <div className={styles.credentials}>
-              {credentials.map((cred) => (
-                <span key={cred} className={styles.credTag}>
-                  {cred}
-                </span>
-              ))}
+            <div className={styles.heroBio}>
+              <p className={styles.heroBioLabel}>Biography</p>
+              <p>
+                Dr. Dudley graduated from Georgetown University School of Medicine
+                in 1985. She completed her residency in Obstetrics &amp; Gynecology
+                at Blodgett/St. Mary&apos;s in Grand Rapids, Michigan in 1989 and
+                became board certified in 1991.
+              </p>
+              <p>
+                Dr. Dudley relocated from West Virginia to Illinois in January 2019
+                when she joined Asbery &amp; Associates in practice. She has been in
+                medical practice for over 30 years and continues to offer a wide
+                variety of Women&apos;s Health Services. Dr. Dudley is currently a
+                member of The American College of Obstetrics and Gynecology, American
+                Association of Gynecologic Laparoscopists, American Society for
+                Colposcopy and Cervical Pathology, and American Society for
+                Reproductive Medicine.
+              </p>
+              <div className={styles.heroBioButton}>
+                <Link href="/request-appointment" className="btn-plum">
+                  Request an Appointment
+                </Link>
+              </div>
             </div>
-            <Link href="/request-appointment" className="btn-plum">
-              Request an Appointment
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.bioSection}>
-        <div className={styles.bioInner}>
-          <p className="section-label">Background</p>
-          <h2 className="section-title">
-            Dedicated to Women&apos;s Health
-          </h2>
-          <div className={styles.bioText}>
-            <p>
-              Dr. Dudley graduated from Georgetown University School of Medicine
-              in 1985. She completed her residency in Obstetrics &amp; Gynecology
-              at Blodgett/St. Mary&apos;s in Grand Rapids, Michigan in 1989 and
-              became board certified in 1991.
-            </p>
-            <p>
-              Dr. Dudley relocated from West Virginia to Illinois in January 2019
-              when she joined Asbery &amp; Associates in practice. She has been in
-              medical practice for over 30 years and continues to offer a wide
-              variety of Women&apos;s Health Services. Dr. Dudley is currently a
-              member of The American College of Obstetrics and Gynecology, American
-              Association of Gynecologic Laparoscopists, American Society for
-              Colposcopy and Cervical Pathology, and American Society for
-              Reproductive Medicine.
-            </p>
           </div>
         </div>
       </section>

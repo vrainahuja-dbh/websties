@@ -32,11 +32,11 @@ const features = [
 ];
 
 const conditions = [
-  { name: "Perimenopause", desc: "The transitional years before menopause when hormone levels begin to fluctuate. Symptoms like irregular periods, mood swings, and sleep disruption can start in your 40s \u2014 or even earlier." },
+  { name: "Perimenopause", desc: "The transitional years before menopause when hormone levels begin to fluctuate. Symptoms like irregular periods, mood swings, and sleep disruption can start in your 40s, or even earlier." },
   { name: "Menopause", desc: "When periods stop permanently and estrogen levels drop significantly. Hot flashes, vaginal dryness, bone loss, and mood changes are common but highly treatable with the right hormone support." },
   { name: "Hormone Imbalances", desc: "When your body produces too much or too little of key hormones like estrogen, progesterone, or testosterone. Imbalances can affect everything from your weight to your mental clarity." },
   { name: "Hot Flashes & Night Sweats", desc: "Sudden waves of heat and sweating that can disrupt sleep and daily life. These are among the most common menopause symptoms and often respond well to hormone therapy." },
-  { name: "Low Energy & Fatigue", desc: "Persistent tiredness that doesn\u2019t improve with rest. Hormonal shifts can affect your metabolism, thyroid function, and sleep quality \u2014 all of which contribute to feeling exhausted." },
+  { name: "Low Energy & Fatigue", desc: "Persistent tiredness that doesn\u2019t improve with rest. Hormonal shifts can affect your metabolism, thyroid function, and sleep quality, all of which contribute to feeling exhausted." },
   { name: "Mood Changes & Irritability", desc: "Anxiety, depression, or emotional volatility that seems to come out of nowhere. Fluctuating hormones directly affect brain chemistry, and stabilizing them can bring significant relief." },
   { name: "Low Libido", desc: "Decreased interest in intimacy that can strain relationships and self-confidence. Hormonal decline \u2014 especially in testosterone and estrogen \u2014 is a common and treatable cause." },
   { name: "Brain Fog & Sleep Issues", desc: "Difficulty concentrating, forgetfulness, and trouble falling or staying asleep. These frustrating symptoms are frequently linked to hormonal changes and often improve with proper treatment." },
@@ -47,7 +47,7 @@ export default function HormonalHealthPage() {
     <main className={styles.servicePage}>
       <section className={styles.serviceHero}>
         <div className={styles.heroInner}>
-          <Link href="/#services" className={styles.backLink}>
+          <Link href="/services" className={styles.backLink}>
             &larr; All Services
           </Link>
           <div className={styles.heroIcon}>{"\u{1F33F}"}</div>
@@ -69,7 +69,7 @@ export default function HormonalHealthPage() {
           </h2>
           <div className={styles.overviewText}>
             <p>
-              Hormonal changes can affect every aspect of your life &mdash; from
+              Hormonal changes can affect every aspect of your life, from
               energy and mood to sleep and intimacy. Whether you&apos;re
               navigating perimenopause, menopause, or other hormonal imbalances,
               our team provides personalized solutions that address the root

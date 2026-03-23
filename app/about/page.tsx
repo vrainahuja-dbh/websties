@@ -34,9 +34,8 @@ export default function AboutPage() {
               height={625}
               style={{
                 width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                objectPosition: "center top",
+                height: "auto",
+                display: "block",
                 borderRadius: 8,
               }}
             />
