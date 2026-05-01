@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav} ref={navRef}>
       <Link href="/" className={styles.navLogo} onClick={closeMenu}>
-        <Image src="/logo.png" alt="Asbery & Associates" width={180} height={90} priority />
+        <Image src="/logo-footer.png" alt="Asbery & Associates" width={180} height={90} priority />
       </Link>
 
       <button

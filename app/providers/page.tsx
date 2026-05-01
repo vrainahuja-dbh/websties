@@ -35,7 +35,7 @@ const providers = [
   },
   {
     slug: "julie-rinehart",
-    name: "Julie Rinehart, CNM, CNP",
+    name: "Julie Rinehart, DNP, APRN, CNM, WHNP-BC",
     title: "Certified Nurse-Midwife & Nurse Practitioner",
     image: "/providers/Julie Rinehart.jpg",
     specialties: ["Midwifery", "Women\u2019s Health", "Primary Care"],

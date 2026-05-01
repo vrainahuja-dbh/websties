@@ -3,9 +3,9 @@ import Link from "next/link";
 import styles from "../provider.module.css";
 
 export const metadata = {
-  title: "Julie Rinehart, CNM, CNP — Certified Nurse-Midwife & Nurse Practitioner | Asbery & Associates",
+  title: "Julie Rinehart, DNP, APRN, CNM, WHNP-BC — Certified Nurse-Midwife & Nurse Practitioner | Asbery & Associates",
   description:
-    "Julie Rinehart, CNM, CNP is a certified nurse-midwife and nurse practitioner offering holistic women's health services at Asbery & Associates.",
+    "Julie Rinehart, DNP, APRN, CNM, WHNP-BC is a certified nurse-midwife and nurse practitioner offering holistic women's health services at Asbery & Associates.",
 };
 
 const highlights = [
@@ -39,7 +39,7 @@ export default function JulieRinehartPage() {
           <div className={styles.heroImage}>
             <Image
               src="/providers/Julie Rinehart.jpg"
-              alt="Julie Rinehart, CNM, CNP"
+              alt="Julie Rinehart, DNP, APRN, CNM, WHNP-BC"
               width={540}
               height={675}
               priority
@@ -56,7 +56,7 @@ export default function JulieRinehartPage() {
               &larr; All Providers
             </Link>
             <h1 className={styles.heroName}>
-              Julie Rinehart, CNM, CNP
+              Julie Rinehart, DNP, APRN, CNM, WHNP-BC
             </h1>
             <p className={styles.heroTitle}>
               Certified Nurse-Midwife &amp; Nurse Practitioner
@@ -64,19 +64,33 @@ export default function JulieRinehartPage() {
             <div className={styles.heroBio}>
               <p className={styles.heroBioLabel}>Biography</p>
               <p>
-                Julie Rinehart graduated from Georgetown University in Washington,
-                DC with a Master&apos;s of Science in the Certified Nurse Midwife
-                and Nurse Practitioner dual degree program in December 2017 and
-                became board certified in 2018.
+                A Georgetown-educated Doctor of Nursing Practice with more than 30 years of clinical
+                experience, Julie Rinehart is a committed champion for women&apos;s health and health
+                equity. An Advanced Practice Registered Nurse dual-certified as a Nurse Midwife and
+                Women&apos;s Health Nurse Practitioner, she joined Asbery and Associates in 2018, where
+                she provides full-scope midwifery and comprehensive women&apos;s health care&mdash;from
+                pregnancy, labor, and delivery to perimenopause and menopause.
               </p>
               <p>
-                Julie has 24 years of experience in nursing, with 15 of those
-                years dedicated to Women&apos;s Health, including management
-                of antepartum, intrapartum, and postpartum patient care, surgical
-                first-assist for cesarean sections, natural birthing methods, and
-                breastfeeding support. She is beginning her career with Asbery
-                &amp; Associates in the medical office setting, where she offers a
-                wide variety of services in Women&apos;s Health and OB-GYN.
+                Julie&apos;s expertise spans well-woman and adolescent care, preconception and infertility
+                support, family planning, and the management of complex gynecologic concerns. She is
+                trained in procedures such as Nexplanon insertion, IUD placement, and colposcopy, while
+                she also pursues ongoing, evidence-based education in midlife transition and menopause
+                management.
+              </p>
+              <p>
+                Deeply dedicated to maternal mental health, rural access, and equitable care, Julie&apos;s
+                doctoral work focused on improving postpartum mental health through early provider and
+                patient education. In addition to her clinical practice, she serves as an adjunct faculty
+                member at Georgetown University and mentors nurse practitioner students across multiple
+                programs at various universities. She maintains certification through the American
+                Midwifery Certification Board (AMCB) and the National Certification Corporation (NCC)
+                in addition to state licensures.
+              </p>
+              <p>
+                When not providing patient care or shaping future clinicians, Julie enjoys time with her
+                family and sons, and finds balance through travel, cooking, attending the theater,
+                learning about other cultures, exercise, and creative pursuits.
               </p>
               <div className={styles.heroBioButton}>
                 <Link href="/request-appointment" className="btn-plum">
