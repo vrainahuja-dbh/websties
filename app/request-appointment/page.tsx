@@ -20,14 +20,19 @@ export default function RequestAppointmentPage() {
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
 
-    // TODO: Replace with actual API endpoint
-    console.log("Appointment request:", data);
-
-    // Simulate submission delay
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    const res = await fetch("/api/request-appointment", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
 
     setSubmitting(false);
-    setSubmitted(true);
+
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      alert("Something went wrong. Please call our office or try again.");
+    }
   };
 
   return (
