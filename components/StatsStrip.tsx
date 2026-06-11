@@ -1,7 +1,7 @@
 import styles from "./StatsStrip.module.css";
 
 const stats = [
-  { number: "2k", label: "Successful Operations" },
+  { number: "10,000", label: "Successful Operations" },
   { number: "6", label: "GYN Specialties" },
   { number: "7+", label: "Counties Served" },
 ];

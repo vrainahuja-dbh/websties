@@ -48,8 +48,9 @@ export default function MeetSpecialist() {
             medically, but to shepherd the community.&rdquo;
           </div>
           <p className={styles.meetExtra}>
-            A decade-plus of surgical excellence, with patients who keep coming
-            back and sending their families.
+            Nearly two decades of surgical excellence spanning over 10,000
+            procedures, including 3,000 advanced robotic cases, with patients
+            who return and refer their families.
           </p>
           <Link href="/providers/dr-asbery" className="btn-plum">
             Meet Dr. Asbery &rarr;

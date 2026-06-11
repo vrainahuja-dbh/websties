@@ -21,8 +21,8 @@ const features = [
   },
   {
     icon: "\u{1F3AF}",
-    title: "First in the Region",
-    desc: "Dr. Asbery was the first robotic surgeon in the Mt. Vernon area, bringing advanced surgical access that previously required travel to St. Louis or Indianapolis.",
+    title: "3,000 Robotic Cases",
+    desc: "Dr. Asbery was the first robotic surgeon in the Mt. Vernon area and has performed over 3,000 robotic cases, bringing advanced surgical access that previously required travel to St. Louis or Indianapolis.",
   },
   {
     icon: "\u{1F49B}",

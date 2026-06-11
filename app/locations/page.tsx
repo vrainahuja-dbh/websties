@@ -46,7 +46,7 @@ export default function LocationsPage() {
                 <span className={styles.detailIcon}>{"\u{1F4CD}"}</span>
                 <p className={styles.detailText}>
                   <strong>Address</strong>
-                  333 South 42nd Street<br />
+                  8 Cusumano Professional Plaza<br />
                   Mt. Vernon, IL 62864
                 </p>
               </div>
@@ -54,7 +54,7 @@ export default function LocationsPage() {
                 <span className={styles.detailIcon}>{"\u{1F4DE}"}</span>
                 <p className={styles.detailText}>
                   <strong>Phone</strong>
-                  (618) 244-3424
+                  <a href="tel:+16182444800">(618) 244-4800</a>
                 </p>
               </div>
               <div className={styles.locationDetail}>

@@ -17,7 +17,7 @@ const highlights = [
   {
     icon: "\u{1F916}",
     title: "First Robotic Surgeon in Mt. Vernon",
-    desc: "Pioneered robotic and minimally invasive surgical access in the region, eliminating the need for patients to travel to major metro areas.",
+    desc: "Pioneered robotic and minimally invasive surgical access in the region, eliminating the need for patients to travel to major metro areas. Dr. Asbery has performed over 3,000 robotic cases.",
   },
   {
     icon: "\u{1F49B}",

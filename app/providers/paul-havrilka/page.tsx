@@ -21,8 +21,8 @@ const highlights = [
   },
   {
     icon: "\u{1F4CD}",
-    title: "Two Locations",
-    desc: "Paul serves patients at both the McLeansboro and Mt. Vernon Family Medicine locations, expanding access to care across the region.",
+    title: "Mt. Vernon Location",
+    desc: "Paul serves patients at the Mt. Vernon Family Medicine location.",
   },
   {
     icon: "\u{1F91D}",
@@ -74,8 +74,8 @@ export default function PaulHavrilkaPage() {
                 department until he opened his own office and practiced solo until
                 2016, when he and his family relocated to Alaska. Paul joined
                 Asbery &amp; Associates in 2019 and offers a wide variety of
-                Family Medicine and Women&apos;s Health Services in both the
-                McLeansboro and Mt. Vernon Family Medicine locations.
+                Family Medicine and Women&apos;s Health Services at the Mt.
+                Vernon Family Medicine location.
               </p>
               <div className={styles.heroBioButton}>
                 <Link href="/request-appointment" className="btn-plum">
