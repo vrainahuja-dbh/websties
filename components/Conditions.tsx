@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Conditions.module.css";
+import PhoneLink from "@/components/PhoneLink";
 
 const conditions = [
   "Uterine Fibroids",
@@ -55,9 +56,9 @@ export default function Conditions() {
               team will help you understand if our services are right for your needs.
               No referral required for most conditions.
             </p>
-            <Link href="/#contact" className={styles.helpBtn}>
+            <PhoneLink className={styles.helpBtn}>
               Call Our Office
-            </Link>
+            </PhoneLink>
           </div>
         </div>
       </div>

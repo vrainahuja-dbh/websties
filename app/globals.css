@@ -46,44 +46,51 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ── SHARED BUTTON STYLES ── */
+.btn-gold,
+.btn-ghost-white,
+.btn-plum,
+.btn-sage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
 .btn-gold {
   background: var(--gold); color: var(--plum-dark);
-  padding: 14px 32px; border: none; cursor: pointer;
-  font-family: var(--font-epilogue), sans-serif;
-  font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-  border-radius: 6px; transition: transform 0.2s, box-shadow 0.2s;
-  text-decoration: none; display: inline-block;
+  padding: 15px 30px 13px 32px; border: none;
+  font-weight: 700; transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(107,143,113,0.45); }
 
 .btn-ghost-white {
   background: transparent; color: white;
-  padding: 14px 32px;
+  padding: 15px 30px 13px 32px;
   border: 1px solid rgba(255,255,255,0.35);
-  font-family: var(--font-epilogue), sans-serif;
-  font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
-  border-radius: 6px; transition: border-color 0.2s, background 0.2s;
-  text-decoration: none; display: inline-block;
+  font-weight: 500; transition: border-color 0.2s, background 0.2s;
 }
 .btn-ghost-white:hover { border-color: white; background: rgba(255,255,255,0.1); }
 
 .btn-plum {
   background: var(--plum); color: white;
-  padding: 16px 40px; border: none; cursor: pointer;
-  font-family: var(--font-epilogue), sans-serif;
-  font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-  border-radius: 6px; transition: background 0.2s;
-  text-decoration: none; display: inline-block;
+  padding: 17px 38px 15px 40px; border: none;
+  font-weight: 700; transition: background 0.2s;
 }
 .btn-plum:hover { background: var(--plum-dark); }
 
 .btn-sage {
   background: var(--sage); color: white;
-  padding: 16px 40px; border: none; cursor: pointer;
-  font-family: var(--font-epilogue), sans-serif;
-  font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-  border-radius: 6px; transition: background 0.2s;
-  text-decoration: none; display: inline-block;
+  padding: 17px 38px 15px 40px; border: none;
+  font-weight: 700; transition: background 0.2s;
 }
 .btn-sage:hover { background: var(--sage-light); }
 

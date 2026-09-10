@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata = {
   title: "Locations — Asbery & Associates",
@@ -54,7 +55,7 @@ export default function LocationsPage() {
                 <span className={styles.detailIcon}>{"\u{1F4DE}"}</span>
                 <p className={styles.detailText}>
                   <strong>Phone</strong>
-                  <a href="tel:+16182444800">(618) 244-4800</a>
+                  <PhoneLink>(618) 244-4800</PhoneLink>
                 </p>
               </div>
               <div className={styles.locationDetail}>
@@ -152,9 +153,9 @@ export default function LocationsPage() {
           <Link href="/request-appointment" className="btn-plum">
             Request an Appointment
           </Link>
-          <Link href="/#contact" className="btn-sage">
+          <PhoneLink className="btn-sage">
             Call Our Office
-          </Link>
+          </PhoneLink>
         </div>
       </section>
     </main>
