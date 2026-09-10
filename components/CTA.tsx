@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./CTA.module.css";
+import PhoneLink from "@/components/PhoneLink";
 
 export default function CTA() {
   return (
@@ -18,9 +19,9 @@ export default function CTA() {
         <Link href="/request-appointment" className="btn-plum">
           Request an Appointment
         </Link>
-        <Link href="/#contact" className="btn-sage">
+        <PhoneLink className="btn-sage">
           Call Our Office
-        </Link>
+        </PhoneLink>
       </div>
     </section>
   );

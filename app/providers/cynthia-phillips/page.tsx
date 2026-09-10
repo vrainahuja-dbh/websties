@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../provider.module.css";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata = {
   title: "Cynthia Phillips, FNP — Family Nurse Practitioner | Asbery & Associates",
@@ -133,9 +134,9 @@ export default function CynthiaPhillipsPage() {
           <Link href="/request-appointment" className="btn-plum">
             Request an Appointment
           </Link>
-          <Link href="/#contact" className="btn-sage">
+          <PhoneLink className="btn-sage">
             Call Our Office
-          </Link>
+          </PhoneLink>
         </div>
       </section>
     </main>

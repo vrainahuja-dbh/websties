@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../service.module.css";
 import FAQ from "../FAQ";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata = {
   title: "Mild Infertility Treatment — Asbery & Associates",
@@ -148,9 +149,9 @@ export default function InfertilityTreatmentPage() {
           <Link href="/request-appointment" className="btn-plum">
             Request an Appointment
           </Link>
-          <Link href="/#contact" className="btn-sage">
+          <PhoneLink className="btn-sage">
             Call Our Office
-          </Link>
+          </PhoneLink>
         </div>
       </section>
     </main>

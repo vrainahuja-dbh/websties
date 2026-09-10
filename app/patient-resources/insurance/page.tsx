@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../shared.module.css";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata = {
   title: "Insurance & Billing — Patient Resources | Asbery & Associates",
@@ -54,9 +55,9 @@ export default function InsurancePage() {
           </div>
           <div className={styles.callout}>
             <strong>Not sure if we accept your plan?</strong>{" "}
-            <Link href="/#contact" className={styles.calloutLink}>
+            <PhoneLink className={styles.calloutLink}>
               Call our office
-            </Link>{" "}
+            </PhoneLink>{" "}
             and our team will verify your benefits before your visit.
           </div>
         </div>
@@ -100,13 +101,12 @@ export default function InsurancePage() {
                 arrangement, our billing team is here to help.
               </p>
               <div style={{ marginTop: 20 }}>
-                <Link
-                  href="/#contact"
+                <PhoneLink
                   className="btn-sage"
                   style={{ padding: "12px 28px", fontSize: "11px" }}
                 >
                   Contact Us
-                </Link>
+                </PhoneLink>
               </div>
             </div>
           </div>
@@ -150,9 +150,9 @@ export default function InsurancePage() {
           <Link href="/request-appointment" className="btn-plum">
             Request an Appointment
           </Link>
-          <Link href="/#contact" className="btn-sage">
+          <PhoneLink className="btn-sage">
             Call Our Office
-          </Link>
+          </PhoneLink>
         </div>
       </section>
     </main>

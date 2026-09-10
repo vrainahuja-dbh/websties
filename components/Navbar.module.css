@@ -11,7 +11,15 @@
 .navLogo img { height: 90px; width: auto; display: block; }
 
 .navLinks {
-  display: flex; gap: 32px; list-style: none; align-items: center;
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+}
+
+.navLinks > li {
+  display: flex;
+  align-items: center;
 }
 
 .navLinks a, .dropdownLabel {
@@ -19,6 +27,7 @@
   font-size: 12px; font-weight: 500; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--charcoal);
   text-decoration: none; transition: color 0.2s;
+  line-height: 1;
 }
 .navLinks a:hover, .dropdownLabel:hover { color: var(--plum); }
 
@@ -28,14 +37,33 @@
 }
 
 .dropdownToggle {
-  display: flex; align-items: center; gap: 6px;
-  background: none; border: none; padding: 0; cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 40px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  line-height: 1;
+}
+
+.dropdownLabel {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .chevron {
   flex-shrink: 0;
+  width: 12px;
+  height: 12px;
   color: var(--mid-gray);
   transition: transform 0.25s ease;
+  display: block;
 }
 
 .dropdownToggleOpen .chevron {
@@ -106,13 +134,51 @@
   color: var(--plum) !important;
 }
 
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navLinks > li > a {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  line-height: 1;
+}
+
 .navCta {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40px;
+  box-sizing: border-box;
   background: var(--plum) !important;
   color: white !important;
-  padding: 10px 22px;
+  padding: 1px 20px 0 22px !important;
   border-radius: 6px;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
 }
 .navCta:hover { background: var(--plum-dark) !important; }
+
+.navPhone {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  font-family: var(--font-epilogue), sans-serif;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  color: var(--plum) !important;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.navPhone:hover { color: var(--plum-dark) !important; }
 
 /* ── MOBILE TOGGLE ── */
 .navToggleLabel {
@@ -167,6 +233,7 @@
 
   .navLinks > li > a {
     display: block;
+    height: auto;
     padding: 16px 0;
     font-family: var(--font-epilogue), sans-serif;
     font-size: 14px;
@@ -181,6 +248,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: auto;
     padding: 16px 0;
     cursor: pointer;
     text-align: left;
@@ -239,19 +307,45 @@
     color: var(--plum) !important;
   }
 
-  /* ── CTA button (mobile) ── */
+  /* ── CTA + phone (mobile) ── */
+  .navActions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding-top: 16px;
+  }
+
   .navCta {
-    margin-top: 16px;
+    margin-top: 0;
     width: 100%;
+    height: auto;
+    min-height: 44px;
     text-align: center;
-    display: block !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
     padding: 14px 22px !important;
+  }
+
+  .navPhone {
+    display: block;
+    height: auto;
+    text-align: center;
+    font-size: 16px !important;
+    padding: 8px 0 4px;
   }
 }
 
 @media (max-width: 768px) {
   .nav { padding: 16px 20px; }
   .navLogo img { height: 56px; }
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .nav { padding: 20px 32px; }
+  .navLogo img { height: 72px; }
+  .navLinks { gap: 18px; }
+  .navActions { gap: 12px; }
 }
 
 @media (max-width: 480px) {

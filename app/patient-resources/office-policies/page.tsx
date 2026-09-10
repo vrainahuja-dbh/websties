@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../shared.module.css";
+import PhoneLink from "@/components/PhoneLink";
 
 export const metadata = {
   title: "Office Policies — Patient Resources | Asbery & Associates",
@@ -116,9 +117,9 @@ export default function OfficePoliciesPage() {
           <Link href="/request-appointment" className="btn-plum">
             Request an Appointment
           </Link>
-          <Link href="/#contact" className="btn-sage">
+          <PhoneLink className="btn-sage">
             Call Our Office
-          </Link>
+          </PhoneLink>
         </div>
       </section>
     </main>

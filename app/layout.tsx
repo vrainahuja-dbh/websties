@@ -36,8 +36,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${epilogue.variable}`}>
-      <body>
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${epilogue.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          type="text/javascript"
+          src="https://cdn.callrail.com/companies/416017355/bfb80c5a0de6065c257f/12/swap.js"
+        />
+      </head>
+      <body suppressHydrationWarning>
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
