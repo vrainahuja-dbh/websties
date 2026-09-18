@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const { firstName, lastName, email, phone, message } = await req.json();
+  const { firstName, lastName, email, phone, message, source } = await req.json();
 
   const { error } = await resend.emails.send({
     from: "Asbery & Associates <notifications@notifications.databridge.health>",
@@ -16,6 +16,7 @@ export async function POST(req: Request) {
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Message:</strong> ${message || "None provided"}</p>
+      <p><strong>Source:</strong> ${source || "Website"}</p>
     `,
   });
 
